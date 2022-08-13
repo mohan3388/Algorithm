@@ -35,6 +35,12 @@
                         problem.Insertion(arr2);
                         problem.Display(arr2);
                         break;
+                    case 3:
+                        int[] arr3 = { 50, 29, 98, 47, 67, 20 };
+                        BubbleSort problem1 = new BubbleSort();
+                        problem1.Bubble(arr3);
+                        problem1.Display(arr3);
+                        break;
                     default:
                         check = false;
                         break;
