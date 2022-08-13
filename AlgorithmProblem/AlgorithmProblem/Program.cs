@@ -5,7 +5,7 @@
         public static void Main(String[] args)
         {
             Console.WriteLine("Welcome to the program");
-            Console.WriteLine("1.Binary Serach Program\n2.Insertion sort program");
+            Console.WriteLine("1.Binary Serach Program\n2.Insertion sort program\n3.Bubble Sort\n4.Merge Sort Problem");
             const string File_Path = @"F:\dotnet\algorith\Algorithm\AlgorithmProblem\AlgorithmProblem\List.txt";
             bool check = true;
             while (check)
@@ -40,6 +40,15 @@
                         BubbleSort problem1 = new BubbleSort();
                         problem1.Bubble(arr3);
                         problem1.Display(arr3);
+                        break;
+                    case 4:
+                        MergeSort merge = new MergeSort();
+                        int[] arr4 = { 12, 11, 13, 5, 6, 7 };
+                        Console.WriteLine("Unsorted array");
+                        merge.DisplayMerge(arr4);
+                        merge.Sorting(arr4, 0, arr4.Length - 1);
+                        Console.WriteLine("unsorted array");
+                        merge.DisplayMerge(arr4);
                         break;
                     default:
                         check = false;
