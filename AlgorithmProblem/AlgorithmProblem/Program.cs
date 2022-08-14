@@ -5,7 +5,7 @@
         public static void Main(String[] args)
         {
             Console.WriteLine("Welcome to the program");
-            Console.WriteLine("1.Binary Serach Program\n2.Insertion sort program\n3.Bubble Sort\n4.Merge Sort Problem\n5.Anagram Problem");
+            Console.WriteLine("1.Binary Serach Program\n2.Insertion sort program\n3.Bubble Sort\n4.Merge Sort Problem\n5.Anagram Problem\n6.Check Prime Number in Range\n7.Prime pollindrom anagram");
             const string File_Path = @"F:\dotnet\algorith\Algorithm\AlgorithmProblem\AlgorithmProblem\List.txt";
             bool check = true;
             while (check)
@@ -59,6 +59,10 @@
                     case 6:
                         PrimeNumber number = new PrimeNumber();
                         number.CheckPrime();
+                        break;
+                    case 7:
+                        PrimePolindrome primePalindrome = new PrimePolindrome();
+                        primePalindrome.PrimePalindromNumber();
                         break;
                     default:
                         check = false;
