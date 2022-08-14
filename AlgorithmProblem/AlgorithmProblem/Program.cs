@@ -56,6 +56,10 @@
                         string secondname = "hearte";
                         anagram.AnagramProblem(firstname, secondname);
                         break;
+                    case 6:
+                        PrimeNumber number = new PrimeNumber();
+                        number.CheckPrime();
+                        break;
                     default:
                         check = false;
                         break;
