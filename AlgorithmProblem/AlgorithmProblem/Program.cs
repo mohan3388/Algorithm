@@ -5,7 +5,7 @@
         public static void Main(String[] args)
         {
             Console.WriteLine("Welcome to the program");
-            Console.WriteLine("1.Binary Serach Program\n2.Insertion sort program\n3.Bubble Sort\n4.Merge Sort Problem\n5.Anagram Problem\n6.Check Prime Number in Range\n7.Prime pollindrom anagram");
+            Console.WriteLine("1.Binary Serach Program\n2.Insertion sort program\n3.Bubble Sort\n4.Merge Sort Problem\n5.Anagram Problem\n6.Check Prime Number in Range\n7.Prime pollindrom anagram\n8.GuessNumber");
             const string File_Path = @"F:\dotnet\algorith\Algorithm\AlgorithmProblem\AlgorithmProblem\List.txt";
             bool check = true;
             while (check)
@@ -63,6 +63,11 @@
                     case 7:
                         PrimePolindrome primePalindrome = new PrimePolindrome();
                         primePalindrome.PrimePalindromNumber();
+                        break;
+                    case 8:
+                        GuessGame game = new GuessGame();
+                        Console.WriteLine("Guess a number between 0 to 127");
+                        Console.WriteLine("Guessed no is :" + game.Find());
                         break;
                     default:
                         check = false;
